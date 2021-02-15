@@ -1,0 +1,44 @@
+.btn{
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-weight: 700;
+}
+
+.icon{
+    font-size: var(--fontSize);
+    cursor: pointer;
+}
+
+.add-icon{
+    color: #fff;
+    font-size: 25px;
+}
+
+.item-icon{
+    margin-left: 20px;
+}
+
+.input{
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 10px;
+    width: 100%;
+    font-size: var(--fontSize);
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+}
+
+.input:focus{
+    outline: none;
+}
+
+
+

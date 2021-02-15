@@ -1,0 +1,105 @@
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.title{
+  display: flex;
+  position: relative;
+}
+
+.sign-out-icon{
+  position: absolute;
+  font-size: 32px;
+  right: 40px;
+  top: 50px;
+  cursor: pointer;
+}
+
+.container{
+  margin: 30px 0;
+  background: #ad5389;
+  background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+  background: linear-gradient(to right, #3c1053, #ad5389);
+  width: 1000px;
+  display: flex;
+  min-height: 90vh;
+  flex-direction: column;
+  border-radius: 10px;
+
+}
+
+.sign-link{
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.add-todo{
+  padding:0 30px 30px 30px ;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  color:#fff
+}
+
+.content{
+  flex: 1;
+  padding: 0 30px;
+  height: 50vh;
+  margin-bottom: 30px;
+  overflow: auto;
+}
+
+
+.error{
+  display: none;
+  padding: 10px 20px;
+  margin: 0 auto;
+  width: 500px;
+  justify-content: center;
+  color: #fff;
+  font-weight: 500;
+  background-color: #ff8989;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
+.title{
+  font-size: 40px;
+  font-weight: 400;
+}
+.content::-webkit-scrollbar {
+  width: 8px;
+}
+.content::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 16px;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: #dccbe1;
+  border-radius: 16px;
+  box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(198, 96, 96, 0.25);
+}
+
+
+@media (max-width: 400px) {
+  body{
+  }
+  .container{
+    margin: 0;
+    overflow: scroll;
+    height: 100vh;
+
+  }
+
+  .content{
+    height: 100vh;
+    overflow: hidden;
+  }
+}

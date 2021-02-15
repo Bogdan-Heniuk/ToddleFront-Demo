@@ -1,0 +1,83 @@
+html {
+    --fontSize: 16px;
+}
+
+.done{
+    text-decoration: line-through;
+    transition-duration: 2s;
+}
+
+.wrapper-login01{
+    display: flex;
+    align-items: center;
+}
+
+.list-title{
+    display: flex;
+}
+
+.list-buttons{
+    flex-shrink: 0;
+}
+
+.checkbox{
+    overflow: hidden;
+}
+
+.checkbox-login01 {
+    display: none;
+}
+
+.text-login01{
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Добавляем многоточие */
+}
+
+.style-login01 {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 20%;
+    border: 3px solid #e6e9ed;
+    background-color: #ffff;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.style-login01::before {
+     content: '✔';
+     position: absolute;
+     color: #ffffff;
+     font-size: 10px;
+     height: 20px;
+     width: 20px;
+     border-radius: 20%;
+     background-color: #0674ec;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     opacity: 0;
+     transition: .3s;
+ }
+
+.checkbox-login01:checked + .style-login01::before {
+       opacity: 1;
+   }
+
+.list-item{
+    border-radius: 20px;
+    padding: 25px;
+    background-color: rgba(0,0,0, 0.3);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: var(--fontSize);
+    margin-bottom: 10px;
+}
+

@@ -1,0 +1,33 @@
+.form-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+label{
+    color: #fff;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.input{
+    margin: 0 0 10px 0;
+    padding: 5px 0;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    font-size: var(--fontSize);
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+}
