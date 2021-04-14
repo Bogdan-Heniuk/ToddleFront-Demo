@@ -10,7 +10,7 @@ export default function LoginForm() {
     const dispatch = useDispatch()
     const LogUser = async (user: { password: string; email: string }) => {
         try {
-            const foundUserRes = await plainAxios.post(`http://localhost:8000/users/login`, {
+            const foundUserRes = await plainAxios.post(`/users/login`, {
                 email: user.email,
                 password: user.password
             })
