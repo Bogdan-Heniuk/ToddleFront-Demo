@@ -2,11 +2,11 @@ import axios from "axios";
 import store from "../redux/store";
 
 const axiosWithAuth = axios.create({
-    baseURL : 'http://toddleapp-env.eba-hyeetpfj.us-east-1.elasticbeanstalk.com'
+    baseURL : 'https://toddl.herokuapp.com/'
 })
 
 const plainAxios = axios.create({
-    baseURL : 'http://toddleapp-env.eba-hyeetpfj.us-east-1.elasticbeanstalk.com'
+    baseURL : 'https://toddl.herokuapp.com/'
 })
 
 axiosWithAuth.interceptors.request.use((config) =>{
